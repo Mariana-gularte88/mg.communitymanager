@@ -1,0 +1,102 @@
+/*logo*/
+.logo {
+    width: 10em;
+}
+
+/*menu*/
+.menu {
+    display: flex;
+    justify-content: row ;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+/*fondo*/
+.fondo {
+    background-image:url("../assets/img/fondo1.jpg") ;
+    background-size: auto;
+}
+
+h1{
+    color: blueviolet ;
+    font-size: 40px;
+    text-align: center;
+    
+        white-space: nowrap;
+        overflow: hidden;
+        width: 10em;
+        animation: anim 3s infinite;
+
+     @keyframes anim{
+       from { width: 100%;}
+    }
+}
+
+h2{
+    color: blueviolet;
+    font-size: 30px;
+}
+h3 {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 10em;
+    animation: anim 4s infinite;
+}
+ @keyframes anim{
+   from { width: 100%;}
+}
+p{
+    color: black;
+    font-size: 20px;
+}
+
+.lista {
+    list-style-type: none;
+   
+}
+
+@import "./base/reset" ;
+@import "./layout.scss/quienesSomos";
+@import "./layout.scss/planes";
+@import "./layout.scss/footer";
+
+
+
+@media (max-width:768px){
+    .flex-conteiner {
+        flex-direction: column;
+    }
+
+    .trabajos {
+        flex-direction: column;
+    }
+   
+    .contenedor-grid .header{
+        grid-column: repeat (1 , 1fr);
+    }
+    .contenedor-grid .contenido{
+        grid-column: repeat (1 , 1fr);
+    }
+
+    .contenedor-grid .sidebar{
+        grid-column: (1 , 1fr);
+    }
+    
+    .contenedor-grid .widget1{
+        grid-column: (2, 1fr);
+    }
+
+    .contenedor-grid .footer{
+        grid-column:  repeat (1 , 1fr);
+    }
+}
+
+
+
+
+
+
+ 
+ 
+
+

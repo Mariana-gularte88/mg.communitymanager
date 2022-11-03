@@ -1,0 +1,39 @@
+/* planes*/
+.articulo{
+    background-color: transparent;
+    box-shadow: 0.3em 0.3em 0.1em 0.2em rgba(0, 0, 0, 0);
+    width: 90%;
+    /*height:10em*/
+    margin: 30px;
+    padding: 0.5em 1em;
+    border: solid 0.2em blueviolet ;
+    border-radius: 1em;
+}
+
+.articulo__titulo--uppercase{
+    text-transform: uppercase;
+}
+
+.articulo__texto--color{
+    color: black;
+}
+article aside h3{
+    text-align: center
+}
+ul {
+    color:blueviolet;
+    font-size: 18px;
+}
+
+
+section article aside{
+    color:blueviolet
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: space-around;
+}
+    
